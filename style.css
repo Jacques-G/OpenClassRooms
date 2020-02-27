@@ -1,0 +1,341 @@
+/* GENERAL */
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    color: #615f5d;
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: #615f5d;
+}
+a:visited, a:hover
+{
+    color: #615f5d;
+}
+
+.main
+{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ASIDE */
+
+.bandeau
+{
+    width: 30%;
+    text-align: center;
+    background-color: #F29900;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.photo
+{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+.titre_bandeau
+{
+    text-transform: uppercase;
+    background-color: #615f5d;
+    color: #F29900;
+}
+
+.contact ul
+{
+    text-align: left;
+    list-style: none;
+}
+
+.contact ul li
+{
+    padding-top: 10px;
+}
+
+.histoire p
+{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.loisirs
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mes_loisirs 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.loisirs img
+{
+    width: 50px;
+    border: 2px solid #615f5d;
+    padding: 0 10px;
+    border-radius: 100%;
+}
+
+.fa-football-ball
+{
+    font-size: 3em;
+    border: 2px solid #615f5d;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.fa-laptop
+{
+    font-size: 3em;
+    border: 2px solid #615f5d;
+    border-radius: 50%;
+    padding: 10px 5px 0 5px;
+}
+
+/* CV */
+
+.cv
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 70%;
+}
+
+h1
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 62px;
+    margin-bottom: -10px;
+}
+
+h1 span
+{
+    color: #F29900;
+}
+
+h2 span
+{
+    border-bottom: 2px solid #F29900;
+}
+
+/* FORMATIONS */
+
+.titre
+{
+    display: flex;
+    border-bottom: 2px solid #F29900;
+}
+
+.fa-graduation-cap
+{
+    color: #F29900;
+    font-size: 2em;
+}
+
+.titre h3
+{
+    text-transform: uppercase;
+}
+
+.my_formation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.my_formation div:nth-child(1)
+{
+    width: 30%;
+}
+
+.my_formation div:nth-child(2)
+{
+    width: 70%;
+}
+.date
+{
+    font-weight: bold;
+}
+.structure
+{
+    text-transform: uppercase;
+}
+.poste
+{
+    margin: -10px 0 -10px 0;
+    font-weight: bold;
+}
+
+/* EXPERIENCES */
+
+.fa-briefcase
+{
+    color: #F29900;
+    font-size: 2em;
+}
+
+.my_Exp
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.my_Exp div:nth-child(1)
+{
+    width: 30%;
+}
+
+.my_Exp div:nth-child(2)
+{
+    width: 70%;
+}
+
+/* RECOMMANDATION */
+
+.fa-pencil-alt
+{
+    color: #F29900;
+    font-size: 2em;
+}
+.recommandations
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* -----MEDIA QUERY----- */
+
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        margin: auto;
+        width: 100%;
+    }
+    .main
+    {
+        flex-direction: column-reverse;
+        
+    }
+    header
+    {
+        text-align: center;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .titre
+    {
+        justify-content: left;
+    }
+    .bandeau
+    {
+        background-color:#F29900;
+        width: 100%;
+    }
+    .cv
+    {
+        width: 100%;
+        padding-left: 0;
+    }
+    article ul li
+    {
+        list-style: none;
+        margin-left: -35px;
+    }
+    .my_formation
+    {
+        flex-direction: column;
+        text-align: center;
+        margin: 10%;
+    }
+    .my_formation div:nth-child(1)
+    {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .my_formation div:nth-child(2)
+    {
+        width: 100%;
+    }
+    .descrip_formation
+    {
+        text-align: center;
+    }
+
+    .my_Exp
+    {
+        flex-direction: column;
+        text-align: center;
+        margin: 10%;
+    }
+
+    .my_Exp div:nth-child(1)
+    {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .my_Exp div:nth-child(2)
+    {
+        width: 100%;
+    }
+    .descrip_Exp .p_2
+    {
+        text-align: justify;
+    }
+
+    .recommandations .reco_1
+    {
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .loisirs
+    {
+        position: relative;
+    }
+
+    .contact ul 
+    {
+        text-align: center;
+    }
+    
+}
+
+@media all and (max-width: 640px)
+{
+    .recommandations
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact ul 
+    {
+        text-align: left;
+    }
+    
+}
+

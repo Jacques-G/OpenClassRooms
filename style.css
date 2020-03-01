@@ -58,6 +58,9 @@ a:visited, a:hover
 {
     text-align: left;
     list-style: none;
+    width: 80%;
+    margin: auto;
+    padding: 0;
 }
 
 .contact ul li
